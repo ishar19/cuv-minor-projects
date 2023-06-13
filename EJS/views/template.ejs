@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google fonts-->
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <main class="maingrid">
+        <header id="join">
+            <h1>Join our community</h1>
+            <p id="blue">30-day, hassle-free money back guarantee</p>
+            <p>Gain access to our full library of tutorials along with expert code reviews.<br>
+                Perfect for any developers who are serious about honing their skills.
+            </p>
+        </header>
+        <section id="sign-up">
+            <h5> Monthly Subscription </h5>
+            <p><span id="pr">&dollar;29</span> per month</p>
+            <p>full access for less than &dollar;1 a day </p>
+            <button class="button" type="button" name="button">Sign Up</button>
+        </section>
+        <section id="why-us">
+            <h5>Why Us</h5>
+            <ul>
+                <% whyUsData.forEach(function(item) { %>
+                    <li>
+                        <%= item %>
+                    </li>
+                    <% }) %>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

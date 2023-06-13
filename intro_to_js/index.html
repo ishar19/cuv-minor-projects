@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Operations</title>
+    <script>
+        // Place your JavaScript code here
+        // Prompt the user to enter the first number
+        const firstNumberInput = prompt("Enter the first number:");
+
+        // Parse the input as an integer
+        const firstNumber = parseInt(firstNumberInput);
+
+        // Check if the firstNumber is a valid number
+        if (isNaN(firstNumber)) {
+            console.log("Invalid input for the first number.");
+        } else {
+            // Prompt the user to enter the second number
+            const secondNumberInput = prompt("Enter the second number:");
+
+            // Parse the input as an integer
+            const secondNumber = parseInt(secondNumberInput);
+
+            // Check if the secondNumber is a valid number
+            if (isNaN(secondNumber)) {
+                console.log("Invalid input for the second number.");
+            } else {
+                // Addition
+                const sum = firstNumber + secondNumber;
+                console.log("Addition:", sum);
+
+                // Subtraction
+                const difference = firstNumber - secondNumber;
+                console.log("Subtraction:", difference);
+
+                // Multiplication
+                const product = firstNumber * secondNumber;
+                console.log("Multiplication:", product);
+
+                // Division
+                if (secondNumber === 0) {
+                    console.log("Division: Cannot divide by zero.");
+                } else {
+                    const division = firstNumber / secondNumber;
+                    console.log("Division:", division);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- No visible content is required for this example -->
+</body>
+
+</html>
